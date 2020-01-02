@@ -28,4 +28,6 @@ dependencies {
     implementation Dependencies.kotlin
     implementation Dependencies.androidAppCompat
     implementation Dependencies.androidKtxCore
+
+    lintChecks project(Modules.lintRules)
 }
