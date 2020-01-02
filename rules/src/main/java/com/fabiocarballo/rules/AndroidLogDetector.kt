@@ -48,10 +48,10 @@ class AndroidLogDetector : Detector(), SourceCodeScanner {
                 AmazingLog instead.
             """.trimIndent(),
                 category = Category.CORRECTNESS,
-                priority = 3,
+                priority = 9,
                 severity = Severity.ERROR,
+                androidSpecific = true,
                 implementation = IMPLEMENTATION
             )
-            .setAndroidSpecific(true)
     }
 }
