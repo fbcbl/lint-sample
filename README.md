@@ -4,6 +4,6 @@ In this sample project you will be able to see how to define your own custom lin
 
 ## To-do
 
-[] Initial setup
-[] Testing
-[] Adding suggestions
+[ ] Initial setup
+[ ] Testing
+[ ] Adding suggestions
