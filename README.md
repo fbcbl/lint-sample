@@ -10,6 +10,16 @@ In this sample project you will be able to see how to define your own custom lin
 
 ## Initial Setup
 
+### Defining the dependencies
+
+In order to create your own custom lint rules you need to add the following dependencies:
+- `com.android.tools.lint:lint-api:lint-version`
+- `com.android.tools.lint:lint-checks:lint-version`
+
+> **Important**: For historical reasons, your lint version should correspond to the Android Gradle Plugin version + 23. This is,
+if your AGP is 3.5.1, then your lint version should be 26.5.1
+
+### Defining the rules
 We start off by defining a separate module where our rules will be declared. This module is the `rules` module. Then, in order to have our app to integrate with it we add the following code to our app `build.gradle`:
 
     dependencies {
