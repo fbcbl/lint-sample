@@ -54,6 +54,10 @@ dependencies {
 
 This way, the lint rules existing in the `rules` module will be compiled into the final `lint.jar` that your app uses.
 
+### Running the rules
+
+In order to run the rules in your app just run:  `./gradlew app:lintDebug` 
+
 ## Resources
 
 These are useful resources I have found during my Lint learnings:
