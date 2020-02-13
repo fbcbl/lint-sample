@@ -1,8 +1,20 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
+test {
+    useJUnitPlatform()
+}
+
 dependencies {
     // used for lint rules
     compileOnly Dependencies.lintApi
     compileOnly Dependencies.lintChecks
+    compileOnly Dependencies.lintTests
+
+    // test lint
+    testImplementation Dependencies.lintTests
+
+    // test runners
+    testImplementation Dependencies.junitJupiterApi
+    testRuntimeOnly Dependencies.junitJupiterEngine
 }
